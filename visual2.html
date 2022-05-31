@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <title>visual1</title>
+    <style>
+        .nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .nav a {
+            float: left;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding:14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin:0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: red;
+        }
+        .dropdowncontent {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdowncontent a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdowncontent a:hover {
+            background-color: aqua;
+        }
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+    </style>
+    <head>
+       <div class="nav">
+           <a href="landing.html">Home</a>
+           <div class="dropdown">
+               <button class="dropbtn">
+                    Plots
+               </button>
+               <div class="dropdowncontent">
+                   <a href="visual1.html">Plot 1</a>
+                   <a href="visual3.html">Plot 3</a>
+                   <a href="visual4.html">Plot 4</a>
+               </div>
+       </div>
+    </head>
+    <body>
+        <img src="Assets/Fig2.png">
+        <p>desctiption</p>
+    </body>
+</html>
